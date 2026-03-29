@@ -4,27 +4,29 @@ Welcome to my portfolio! I'm **Raghav**, a passionate Computer Science undergrad
 
 ## About Me
 
-I am currently pursuing a **Bachelor of Technology in Computer Science** from **Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar**. As an intern with the **Microsoft Learn Student Ambassador (MLSA) program at KIIT**, I work in the Corporate and Public Relations team, where I develop communication and leadership skills while connecting students with industry opportunities.
+I am currently pursuing a **Bachelor of Technology in Computer Science and Engineering** from **Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar** (2025-2029). An enthusiastic CSE student with strong programming and problem-solving skills. As a **proactive class representative**, I bring leadership qualities and a keen interest in software development, web technologies, and innovative solutions.
 
 ### My Background
 
-- **Education**: B.Tech in Computer Science, KIIT (Currently Pursuing)
-- **Current Role**: MLSA Intern - Corporate and Public Relations
-- **Location**: Bhubaneswar, India
+- **Education**: B.Tech CSE, KIIT, Bhubaneswar (2025-2029)
+- **Senior Secondary**: Amicus International School (2023-2025) - Grade A+
+- **Location**: Bhubaneswar, Odisha, India
 - **Career Goal**: Secure a role in Web Development or a multinational tech company
 
 ## Skills & Expertise
 
 ### Technical Skills
 - **Programming Languages**: Python, C
-- **Web Development**: HTML, CSS, JavaScript
-- **Areas of Interest**: Web Development, Full-Stack Development
+- **Web Development**: HTML, HTML5, CSS, JavaScript
+- **Areas of Interest**: Web Development, Front-End Development, Problem Solving
 
-### Soft Skills
-- **Communication**: Excellent verbal and written communication
-- **Presentations**: Adept at presenting ideas and concepts effectively
-- **Team Collaboration**: Experience working in team environments (MLSA)
-- **Leadership**: Developing leadership skills through MLSA initiatives
+### Professional Skills
+- **Project Management**: Planning & execution
+- **Leadership**: Class representative with leadership qualities
+- **Effective Communication**: Excellent verbal and written communication
+- **Team Collaboration**: Strong teamwork & collaboration experience
+- **Time Management**: Efficient task prioritization
+- **Critical Thinking**: Problem-solving and analytical skills
 
 ## What You'll Find Here
 

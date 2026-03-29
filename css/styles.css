@@ -601,6 +601,68 @@ section {
 }
 
 /* ===========================
+   Certifications Section
+   =========================== */
+
+.certifications {
+    background-color: var(--bg-white);
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.certificate-card {
+    background: linear-gradient(135deg, var(--primary-light), white);
+    padding: var(--spacing-xl);
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    text-align: center;
+    transition: var(--transition);
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.2);
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    display: block;
+}
+
+.certificate-card h3 {
+    color: var(--text-dark);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.cert-issuer {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.cert-date {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.cert-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===========================
    Projects Section
    =========================== */
 
@@ -827,6 +889,7 @@ section {
 .social-icons {
     display: flex;
     gap: var(--spacing-lg);
+    flex-wrap: wrap;
 }
 
 .social-icon {
@@ -845,6 +908,29 @@ section {
 .social-icon:hover {
     background-color: var(--primary-color);
     transform: translateY(-5px);
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #0077B5, #005f8f);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+    border: 2px solid transparent;
+}
+
+.linkedin-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+    background: linear-gradient(135deg, #005f8f, #003d5c);
 }
 
 /* Contact Form */
