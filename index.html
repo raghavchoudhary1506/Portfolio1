@@ -35,14 +35,23 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
+            <div class="hero-grid"></div>
             <div class="hero-content">
-                <h1 class="hero-title fade-in">Welcome to My Portfolio</h1>
-                <p class="hero-subtitle fade-in-delay">Computer Science Student | Web Developer Enthusiast</p>
-                <p class="hero-description fade-in-delay-2">Building beautiful and interactive web experiences</p>
-                <button class="cta-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">View My Projects</button>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                    </div>
+                    <pre class="code-text">$ <span class="code-keyword">const</span> <span class="code-var">developer</span> = {<br>    name: <span class="code-string">"Raghav Choudhary"</span>,<br>    role: <span class="code-string">"Full Stack Developer"</span>,<br>    skills: [<span class="code-string">'HTML'</span>, <span class="code-string">'CSS'</span>, <span class="code-string">'JavaScript'</span>, <span class="code-string">'Python'</span>],<br>    passions: [<span class="code-string">'Web Development'</span>, <span class="code-string">'UI/UX'</span>, <span class="code-string">'Innovation'</span>]<br>}</pre>
+                </div>
+                <h1 class="hero-title glitch" data-text="Welcome to My Portfolio">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle neon-text">Computer Science Student | Web Developer</p>
+                <p class="hero-description">Building beautiful, interactive, and scalable web experiences</p>
+                <button class="cta-button tech-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">$ explore_projects</button>
             </div>
             <div class="scroll-indicator" id="scrollIndicator">
-                <span>Scroll to explore</span>
+                <span>▼ Scroll to explore ▼</span>
             </div>
         </section>
 
@@ -83,74 +92,97 @@
         <!-- Skills Section -->
         <section class="skills" id="skills">
             <div class="container">
-                <h2 class="section-title">Skills & Expertise</h2>
+                <h2 class="section-title neon-title">Skills & Tech Stack</h2>
                 
+                <div class="tech-stack-display">
+                    <div class="terminal-block">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">techStack.js</span>
+                        </div>
+                        <div class="terminal-content">
+                            <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">npm install --save raghav-skills</span></p>
+                            <p class="terminal-line success"><span class="prompt">✓</span> Frontend: HTML5, CSS3, JavaScript</p>
+                            <p class="terminal-line success"><span class="prompt">✓</span> Languages: Python, C, JavaScript</p>
+                            <p class="terminal-line success"><span class="prompt">✓</span> Tools: Git, VS Code, GitHub Pages</p>
+                            <p class="terminal-line success"><span class="prompt">✓</span> Design: Responsive, Dark Mode, Animations</p>
+                            <p class="terminal-line"><span class="prompt">$</span></p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="skills-container">
                     <h3 class="skills-category">Technical Skills</h3>
                     <div class="skills-grid">
-                        <div class="skill-card" data-technology="python">
+                        <div class="skill-card tech-card" data-technology="python">
                             <div class="skill-header">
                                 <span class="skill-icon">🐍</span>
                                 <h4>Python</h4>
                             </div>
                             <p>Programming & Problem Solving</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%;"></div>
+                            <div class="progress-bar tech-progress">
+                                <div class="progress neon-progress" style="width: 80%;"></div>
                             </div>
+                            <span class="skill-badge-tech">80%</span>
                         </div>
 
-                        <div class="skill-card" data-technology="c">
+                        <div class="skill-card tech-card" data-technology="c">
                             <div class="skill-header">
                                 <span class="skill-icon">⚙️</span>
                                 <h4>C Programming</h4>
                             </div>
                             <p>Core Programming Concepts</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
+                            <div class="progress-bar tech-progress">
+                                <div class="progress neon-progress" style="width: 75%;"></div>
                             </div>
+                            <span class="skill-badge-tech">75%</span>
                         </div>
 
-                        <div class="skill-card" data-technology="html-css-js">
+                        <div class="skill-card tech-card" data-technology="html-css-js">
                             <div class="skill-header">
                                 <span class="skill-icon">🌐</span>
-                                <h4>HTML, CSS, JavaScript</h4>
+                                <h4>Web Development</h4>
                             </div>
-                            <p>Modern Web Development</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%;"></div>
+                            <p>HTML, CSS, JavaScript</p>
+                            <div class="progress-bar tech-progress">
+                                <div class="progress neon-progress" style="width: 85%;"></div>
                             </div>
+                            <span class="skill-badge-tech">85%</span>
                         </div>
 
-                        <div class="skill-card" data-technology="html-css-js">
+                        <div class="skill-card tech-card" data-technology="html-css-js">
                             <div class="skill-header">
                                 <span class="skill-icon">📱</span>
                                 <h4>Responsive Design</h4>
                             </div>
                             <p>Mobile-First Development</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 82%;"></div>
+                            <div class="progress-bar tech-progress">
+                                <div class="progress neon-progress" style="width: 82%;"></div>
                             </div>
+                            <span class="skill-badge-tech">82%</span>
                         </div>
                     </div>
 
                     <h3 class="skills-category">Professional Skills</h3>
                     <div class="skills-grid soft-skills">
-                        <div class="skill-badge communication">
+                        <div class="skill-badge-pro">
                             💬 Communication
                         </div>
-                        <div class="skill-badge presentations">
+                        <div class="skill-badge-pro">
                             🎯 Project Management
                         </div>
-                        <div class="skill-badge collaboration">
+                        <div class="skill-badge-pro">
                             👥 Team Collaboration
                         </div>
-                        <div class="skill-badge leadership">
+                        <div class="skill-badge-pro">
                             🎖️ Leadership
                         </div>
-                        <div class="skill-badge communication">
+                        <div class="skill-badge-pro">
                             ⏱️ Time Management
                         </div>
-                        <div class="skill-badge presentations">
+                        <div class="skill-badge-pro">
                             🧠 Critical Thinking
                         </div>
                     </div>
