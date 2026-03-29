@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raghav's Portfolio - Web Developer & Computer Science Student">
+    <meta name="theme-color" content="#0066cc">
+    <title>Raghav - Web Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>R</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation & Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Raghav</div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">🌙</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle fade-in-delay">Computer Science Student | Web Developer Enthusiast</p>
+                <p class="hero-description fade-in-delay-2">Building beautiful and interactive web experiences</p>
+                <button class="cta-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">View My Projects</button>
+            </div>
+            <div class="scroll-indicator" id="scrollIndicator">
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="profile-placeholder">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="35" r="20" fill="#0066cc"/>
+                                <ellipse cx="50" cy="70" rx="30" ry="25" fill="#0066cc"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>I'm Raghav</h3>
+                        <p class="highlight">MLSA Intern | Computer Science Student | Web Developer Enthusiast</p>
+                        <p>I'm currently pursuing a <strong>Bachelor of Technology in Computer Science</strong> from <strong>Kalinga Institute of Industrial Technology (KIIT)</strong>, Bhubaneswar. As a passionate learner, I'm developing my skills in web development and exploring opportunities in multinational tech companies.</p>
+                        
+                        <div class="achievements">
+                            <h4>Key Highlights:</h4>
+                            <ul>
+                                <li>Currently serving as an MLSA Intern in Corporate and Public Relations at KIIT</li>
+                                <li>Developing expertise in web development technologies</li>
+                                <li>Strong communication and presentation abilities</li>
+                                <li>Experience in team collaboration and leadership initiatives</li>
+                                <li>Passionate about creating user-friendly web experiences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                
+                <div class="skills-container">
+                    <h3 class="skills-category">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-technology="python">
+                            <div class="skill-header">
+                                <span class="skill-icon">🐍</span>
+                                <h4>Python</h4>
+                            </div>
+                            <p>Programming & scripting</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-technology="c">
+                            <div class="skill-header">
+                                <span class="skill-icon">⚙️</span>
+                                <h4>C Programming</h4>
+                            </div>
+                            <p>Systems programming</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-technology="html-css-js">
+                            <div class="skill-header">
+                                <span class="skill-icon">🌐</span>
+                                <h4>HTML, CSS, JavaScript</h4>
+                            </div>
+                            <p>Web development</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-technology="html-css-js">
+                            <div class="skill-header">
+                                <span class="skill-icon">📱</span>
+                                <h4>Responsive Design</h4>
+                            </div>
+                            <p>Mobile-first development</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="skills-category">Soft Skills</h3>
+                    <div class="skills-grid soft-skills">
+                        <div class="skill-badge communication">
+                            💬 Communication
+                        </div>
+                        <div class="skill-badge presentations">
+                            🎤 Presentations
+                        </div>
+                        <div class="skill-badge collaboration">
+                            👥 Team Collaboration
+                        </div>
+                        <div class="skill-badge leadership">
+                            🎯 Leadership
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="html-css-js">HTML/CSS/JS</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="c">C</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-technology="html-css-js">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" fill="#e8f4f8"/>
+                                    <rect x="10" y="10" width="80" height="20" fill="#0066cc"/>
+                                    <circle cx="25" cy="20" r="3" fill="white"/>
+                                    <circle cx="35" cy="20" r="3" fill="white"/>
+                                    <circle cx="45" cy="20" r="3" fill="white"/>
+                                    <rect x="10" y="40" width="80" height="50" fill="#f0f0f0"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>A responsive portfolio website showcasing projects and skills with modern UI/UX design. Features smooth scrolling, dark mode, and interactive elements.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-primary">View Project</a>
+                                <a href="#" class="btn-secondary">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-technology="html-css-js">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" fill="#fff8e8"/>
+                                    <circle cx="20" cy="20" r="8" fill="#0066cc"/>
+                                    <circle cx="50" cy="20" r="8" fill="#0066cc"/>
+                                    <circle cx="80" cy="20" r="8" fill="#0066cc"/>
+                                    <rect x="10" y="40" width="25" height="50" fill="#0066cc" opacity="0.3"/>
+                                    <rect x="40" y="30" width="25" height="60" fill="#0066cc" opacity="0.5"/>
+                                    <rect x="70" y="35" width="25" height="55" fill="#0066cc" opacity="0.2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>To-Do List Application</h3>
+                            <p>An interactive to-do list app with add, edit, delete, and mark-complete functionalities. Data persists using browser localStorage for a seamless user experience.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-primary">View Project</a>
+                                <a href="#" class="btn-secondary">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-technology="html-css-js">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" fill="#f0f8e8"/>
+                                    <rect x="20" y="30" width="15" height="40" fill="#0066cc"/>
+                                    <rect x="40" y="20" width="15" height="50" fill="#0066cc"/>
+                                    <rect x="60" y="35" width="15" height="35" fill="#0066cc"/>
+                                    <circle cx="27.5" cy="25" r="5" fill="#ff6b6b"/>
+                                    <circle cx="47.5" cy="15" r="5" fill="#ff6b6b"/>
+                                    <circle cx="67.5" cy="30" r="5" fill="#ff6b6b"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Calculator Application</h3>
+                            <p>A functional calculator built with vanilla JavaScript featuring basic arithmetic operations, percentage calculations, and a clean, intuitive interface with real-time computation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-primary">View Project</a>
+                                <a href="#" class="btn-secondary">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-technology="html-css-js">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" fill="#fef3e8"/>
+                                    <circle cx="50" cy="50" r="30" fill="none" stroke="#0066cc" stroke-width="3"/>
+                                    <circle cx="50" cy="50" r="20" fill="none" stroke="#0066cc" stroke-width="2"/>
+                                    <circle cx="50" cy="50" r="10" fill="none" stroke="#0066cc" stroke-width="1"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather Application</h3>
+                            <p>A weather app that fetches real-time data from a weather API, displaying current conditions, forecasts, and city search functionality with a visually appealing interface.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-primary">View Project</a>
+                                <a href="#" class="btn-secondary">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">I'd love to hear from you! Reach out for opportunities or just a friendly chat.</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:raghav@example.com">raghav@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">🔗</span>
+                            <div>
+                                <p class="contact-label">LinkedIn</p>
+                                <a href="https://linkedin.com" target="_blank">linkedin.com/in/raghav</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">👨‍💻</span>
+                            <div>
+                                <p class="contact-label">GitHub</p>
+                                <a href="https://github.com" target="_blank">github.com/raghav</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" title="GitHub">🐙</a>
+                                <a href="#" class="social-icon" title="LinkedIn">💼</a>
+                                <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Me a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="Your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Message subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Your message..." rows="6"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Send Message</button>
+                        <p class="form-feedback" id="formFeedback"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank">LinkedIn</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Overview</h4>
+                <p>Computer Science Student | Web Developer | MLSA Intern at KIIT</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Raghav. All rights reserved.</p>
+            <button class="back-to-top" id="backToTop" title="Back to top">↑ Back to Top</button>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
